@@ -13,16 +13,13 @@ toss = do
     putStrLn $ "George tossed " ++ shuffled !! 4
 
 getScissors :: [String]
-getScissors =
-    scissors where scissors = replicate 10 "✂️"
+getScissors = replicate 10 "✂️"
 
 getPaper :: [String]
-getPaper =
-    paper where paper = replicate 10 "📝"
+getPaper = replicate 10 "📝"
 
 getRocks :: [String]
-getRocks =
-    rocks where rocks = replicate 10 "🗿"
+getRocks = replicate 10 "🗿"
 
 getPossibilities :: [String] -> [String] -> [String] -> [String]
 getPossibilities rocks paper scissors =
